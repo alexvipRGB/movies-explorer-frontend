@@ -1,3 +1,7 @@
+movies-explorer-frontend
+
+https://disk.yandex.ru/d/TEa9iB--72I8nA (Ссылка на верстку)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
