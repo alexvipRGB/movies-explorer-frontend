@@ -1,0 +1,142 @@
+.profile {
+  max-width: 410px;
+  margin: 74px auto 70px auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.profile__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 123px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.profile__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__field {
+  margin: 0;
+  padding: 0;
+  min-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 13px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.profile__input {
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  outline: none;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+
+.profile__input:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.profile__line {
+  margin-bottom: 17px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.profile__button-save {
+  margin-top: 213px;
+  color: #000;
+  background-color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.profile__button-save:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.profile__button-logout {
+  margin-top: 16px;
+  color: #ff4062;
+  background-color: #ffffff;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.profile__button-logout:hover {
+  color: rgba(255, 64, 98, 0.3);
+}
+
+@media screen and (max-width: 1023px) {
+  .profile {
+    padding-top: 236px;
+    padding-bottom: 269px;
+  }
+
+  .profile__title {
+    margin-bottom: 96px;
+  }
+
+  .profile__button-save {
+    margin-top: 193px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .profile {
+    padding: 70px 30px 40px 30px;
+  }
+
+  .profile__title {
+    margin-bottom: 80px;
+  }
+
+  .profile__input {
+    width: 150px;
+  }
+
+  .profile__button-save {
+    margin-top: 362px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .profile__button-logout {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
