@@ -1,19 +1,11 @@
-import { useEffect, useState } from 'react';
-
 import { useLocation } from 'react-router-dom';
 
 import './MoviesCardList.css';
 
 import MoviesCard from '../MoviesCard/MoviesCard';
-import search from '../SearchForm/SearchForm';
 
 function MoviesCardList({ moviesData }) {
-  const [searchValue, setSearchValue] = useState(search.querry);
   const location = useLocation();
-
-  useEffect(() => {
-    setSearchValue(search.querry);
-  }, [search])
 
   return (
     <section className='movies-container'>
@@ -33,7 +25,7 @@ function MoviesCardList({ moviesData }) {
               ))
             }
           </ul>
-          : searchValue !== '' ? <span className='movies-list__error'>Ничего не найдено</span> : <span className='movies-list__error'></span>
+          : moviesData.length === 0 ? <span className='movies-list__error'>Ничего не найдено</span> : ''
       }
     </section>
   )
