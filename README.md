@@ -15,7 +15,7 @@ https://alpetrov.dip.nomoredomains.work'
 
 Фронтенд: https://alpetrov.dip.nomoredomains.work
 
-Ссылка на пул-реквест: 
+Ссылка на пул-реквест: https://github.com/alexvipRGB/movies-explorer-frontend/pull/3
 
 https://disk.yandex.ru/d/TEa9iB--72I8nA (Ссылка на верстку)
 
