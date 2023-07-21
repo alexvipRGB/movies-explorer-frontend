@@ -1,8 +1,11 @@
+import { useState } from 'react';
+
 import { useLocation } from 'react-router-dom';
 
 import './MoviesCardList.css';
 
 import MoviesCard from '../MoviesCard/MoviesCard';
+import SearchForm from '../SearchForm/SearchForm';
 
 function MoviesCardList({ moviesData }) {
   const location = useLocation();
@@ -25,7 +28,7 @@ function MoviesCardList({ moviesData }) {
               ))
             }
           </ul>
-          : <input className='search__input' name='querry'/> !== '' ? <span className='movies-list__error'>Ничего не найдено</span> : ''
+          : SearchForm = window.location.search !== '' ? <span className='movies-list__error'>Ничего не найдено</span> : ''
       }
     </section>
   )
