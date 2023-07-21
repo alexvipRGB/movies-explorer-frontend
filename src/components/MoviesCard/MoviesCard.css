@@ -25,6 +25,7 @@
   line-height: 18.15px;
   text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .movies-card__duration {
@@ -75,7 +76,7 @@
 
 @media screen and (max-width: 917px) {
   .movies-card__title {
-    max-width: 250px;
+    max-width: 198px;
   }
 
   .movies-card__poster {
