@@ -10,7 +10,7 @@ function MoviesCardList({ moviesData }) {
   return (
     <section className='movies-container'>
       {
-        moviesData.length > 0
+        moviesData.length > 0 & location.search !== ''
           ? <ul className='movies-list'>
             {
               moviesData.map((movie) => (
