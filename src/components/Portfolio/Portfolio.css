@@ -1,0 +1,116 @@
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF;
+}
+
+.portfolio__container {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0px 70px 125px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.portfolio__title {
+  margin: 0;
+  color: #A0A0A0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.portfolio__list-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style: none;
+}
+
+.portfolio__list-container_item {
+  padding-bottom: 19px;
+  display: flex;
+  border-bottom: 1px solid #E8E8E8;
+  box-sizing: border-box;
+}
+
+.portfolio__list-container_item:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+
+.portfolio__list-container_item-link {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: -0.04em;
+  transition: all 0.3s ease;
+}
+
+.portfolio__list-container_item-link:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.portfolio__list-container_title {
+  margin: 0;
+}
+
+.portfolio__list-container_icon {
+  width: 29px;
+  height: 50px;
+  margin: 0;
+}
+
+.portfolio__list-container_icon:hover {
+  scale: 1.3;
+}
+
+@media screen and (max-width: 1023px) {
+  .portfolio__container {
+    padding: 0px 50px 90px;
+  }
+
+  .portfolio__list-container_item-link {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .portfolio__container {
+    padding: 0px 14px 49px;
+    gap: 40px;
+  }
+
+  .portfolio__list-container_item {
+    padding-bottom: 0px;
+    height: 49px;
+  }
+
+  .portfolio__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .portfolio__list-container_item-link {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .portfolio__list-container_icon {
+    text-align: right;
+  }
+}
