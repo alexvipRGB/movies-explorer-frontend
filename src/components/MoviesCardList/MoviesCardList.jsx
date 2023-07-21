@@ -3,9 +3,8 @@ import { useLocation } from 'react-router-dom';
 import './MoviesCardList.css';
 
 import MoviesCard from '../MoviesCard/MoviesCard';
-import SearchForm from '../SearchForm/SearchForm';
 
-function MoviesCardList({ moviesData }, { war }) {
+function MoviesCardList({ moviesData }) {
   const location = useLocation();
 
   return (
@@ -26,10 +25,7 @@ function MoviesCardList({ moviesData }, { war }) {
               ))
             }
           </ul>
-          : <SearchForm
-            search={
-              war
-            } /> !== "" ? <span className='movies-list__error'>Ничего не найдено</span> : ''
+          : localStorage.getItem('search') !== "" ? <span className='movies-list__error'>Ничего не найдено</span> : ''
       }
     </section>
   )
