@@ -9,6 +9,7 @@ import { EMPTY_FIELD } from '../../utils/constants';
 const SearchForm = ({ search, handleSubmit, isRequired = true, isEmptyField, handleShortsClick }) => {
   const [searchValue, setSearchValue] = useState(search.querry);
   const [isShortsFilmChecked, setIsShortsFilmChecked] = useState(search.includeShorts);
+  window.location.search = searchValue;
 
   function handleChange({ target }) {
     setSearchValue(target.value);
