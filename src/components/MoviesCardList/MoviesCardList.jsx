@@ -28,7 +28,7 @@ function MoviesCardList({ moviesData }) {
               ))
             }
           </ul>
-          : SearchForm = window.location.search !== '' ? <span className='movies-list__error'>Ничего не найдено</span> : ''
+          : window.location.search !== "" ? <span className='movies-list__error'>Ничего не найдено</span> : ''
       }
     </section>
   )
