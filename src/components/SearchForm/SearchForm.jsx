@@ -6,10 +6,10 @@ import Checkbox from '../Checkbox/Checkbox';
 
 import { EMPTY_FIELD } from '../../utils/constants';
 
-const SearchForm = ({ search, handleSubmit, isRequired = true, isEmptyField, handleShortsClick }) => {
+const SearchForm = ({ search, handleSubmit, isRequired = true, isEmptyField, handleShortsClick, war }) => {
   const [searchValue, setSearchValue] = useState(search.querry);
   const [isShortsFilmChecked, setIsShortsFilmChecked] = useState(search.includeShorts);
-  window.location.search = searchValue;
+  war = searchValue;
 
   function handleChange({ target }) {
     setSearchValue(target.value);
