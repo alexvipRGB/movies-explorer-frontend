@@ -6,7 +6,7 @@ import MoviesCard from '../MoviesCard/MoviesCard';
 
 function MoviesCardList({ moviesData }) {
   const location = useLocation();
-
+  const search = JSON.parse(localStorage.getItem('search'));
   return (
     <section className='movies-container'>
       {
@@ -25,7 +25,7 @@ function MoviesCardList({ moviesData }) {
               ))
             }
           </ul>
-          : localStorage.getItem('search') !== "" ? <span className='movies-list__error'>Ничего не найдено</span> : ''
+          : search !== "" ? <span className='movies-list__error'>Ничего не найдено</span> : ''
       }
     </section>
   )
