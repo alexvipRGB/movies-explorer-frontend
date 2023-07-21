@@ -8,7 +8,7 @@ import MoviesCard from '../MoviesCard/MoviesCard';
 import search from '../SearchForm/SearchForm';
 
 function MoviesCardList({ moviesData }) {
-  const [searchValue] = useState(search.search);
+  const [searchValue] = useState(search.querry);
   const location = useLocation();
 
   return (
