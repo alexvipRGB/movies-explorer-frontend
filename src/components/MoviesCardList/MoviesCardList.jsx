@@ -9,7 +9,7 @@ function MoviesCardList({ moviesData }) {
 
   const search = JSON.parse(localStorage.getItem('search'));
 
-  if (localStorage.getItem('search') === undefined) {
+  if (localStorage.getItem('search') === null) {
     localStorage.setItem('search', JSON.stringify( { querry: "", includeShorts: false }))
   }
 
