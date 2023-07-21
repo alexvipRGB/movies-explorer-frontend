@@ -8,7 +8,7 @@ import MoviesCard from '../MoviesCard/MoviesCard';
 import search from '../SearchForm/SearchForm';
 
 function MoviesCardList({ moviesData }) {
-  const [searchValue] = useState(search.search.querry);
+  const [searchValue] = useState(search.search);
   const location = useLocation();
 
   return (
@@ -31,10 +31,6 @@ function MoviesCardList({ moviesData }) {
           </ul>
           : searchValue !== '' ? <span className='movies-list__error'>Ничего не найдено</span> : <span className='movies-list__error'></span>
       }
-      {
-
-      }
-
     </section>
   )
 }
