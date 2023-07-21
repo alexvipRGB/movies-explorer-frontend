@@ -1,0 +1,49 @@
+/*Основной блок*/
+.nav {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10px;
+}
+
+/*Ссылки*/
+.nav__link {
+  width: 96px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8e8e8;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  background: #e8e8e8;
+  opacity: .5;
+}
+
+@media screen and (max-width: 576px) {
+  .nav {
+    bottom: 17px;
+    gap: 6px;
+  }
+
+  .nav__link {
+    width: 82px;
+    height: 26px;
+    border-radius: 6px;
+    font-size: 10px;
+    line-height: 16px;
+  }
+}

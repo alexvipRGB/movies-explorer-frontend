@@ -1,0 +1,47 @@
+.navigation-auth {
+  margin: -3px 1px 0 0;
+}
+
+.navigation-auth__list {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.navigation-auth__link {
+  color: #fff;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  transition: opacity .2s linear;
+  cursor: pointer;
+}
+
+.navigation-auth__link:hover {
+  opacity: .6;
+}
+
+.navigation-auth__link_type_signup {
+  color: #000000;
+}
+
+.navigation-auth__link_type_signin {
+  margin-left: 30px;
+  padding: 8px 20px;
+  color: #fff;
+  background-color: #3456F3;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 540px) {
+  .navigation-auth__link {
+      font-size: 10px;
+  }
+
+  .navigation-auth__link_type_signin {
+      margin-left: 14px;
+      padding: 7px 12px;
+  }
+}
