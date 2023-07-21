@@ -10,7 +10,7 @@ function MoviesCardList({ moviesData }) {
   return (
     <section className='movies-container'>
       {
-        moviesData.length > 0 & location.search !== ''
+        moviesData.length > 0
           ? <ul className='movies-list'>
             {
               moviesData.map((movie) => (
@@ -25,8 +25,12 @@ function MoviesCardList({ moviesData }) {
               ))
             }
           </ul>
-          : <span className='movies-list__error'>Ничего не найдено</span>
+          : location.search !== '' ? <span className='movies-list__error'>Ничего не найдено</span> : <span className='movies-list__error'></span>
       }
+      {
+
+      }
+
     </section>
   )
 }
