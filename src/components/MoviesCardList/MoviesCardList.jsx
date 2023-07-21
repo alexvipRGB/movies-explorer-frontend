@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { useLocation } from 'react-router-dom';
 
@@ -8,8 +8,12 @@ import MoviesCard from '../MoviesCard/MoviesCard';
 import search from '../SearchForm/SearchForm';
 
 function MoviesCardList({ moviesData }) {
-  const [searchValue] = useState(search.querry);
+  const [searchValue, setSearchValue] = useState(search.querry);
   const location = useLocation();
+
+  useEffect(() => {
+    setSearchValue(search.querry);
+  }, [search])
 
   return (
     <section className='movies-container'>
