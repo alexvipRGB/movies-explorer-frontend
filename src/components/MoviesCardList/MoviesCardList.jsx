@@ -27,7 +27,7 @@ function MoviesCardList({ moviesData }, { war }) {
             }
           </ul>
           : <SearchForm
-            key={
+            search={
               war
             } /> !== "" ? <span className='movies-list__error'>Ничего не найдено</span> : ''
       }
