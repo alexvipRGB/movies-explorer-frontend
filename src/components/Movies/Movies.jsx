@@ -19,7 +19,7 @@ function Movies() {
   const [displayMovies, setDisplayMovies] = useState([]);
   const [cardsAmount, setCardsAmount] = useState(getCardsAmount());
   const [isMoveButtonVisible, setIsMoveButtonVisible] = useState(true);
-  const [search, setSearch] = useState({ querry: '', includeShorts: false });
+  const [search, setSearch] = useState({ querry: "", includeShorts: false });
   const [searchedMovies, setSearchedMovies] = useState([]);
   const { setSavedMovies } = useMoviesContext();
   const [isEmptyField, setIsEmptyField] = useState(false);
